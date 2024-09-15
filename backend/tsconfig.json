@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                                  // Target modern JavaScript (ES2022)
+    "module": "commonjs",                                // CommonJS modules for Node.js
+    "rootDir": "./src",                                  // Root directory of your TypeScript files
+    "outDir": "./dist",                                  // Output directory for compiled JavaScript
+    "esModuleInterop": true,                             // Enable interoperability with CommonJS
+    "forceConsistentCasingInFileNames": true,            // Ensure consistency in file casing
+    "strict": true,                                      // Enable strict type checking
+    "moduleResolution": "node",                          // Ensure TypeScript resolves modules the same way Node.js does
+    "skipLibCheck": true,                                // Skip type checking of declaration files (improves compilation speed)
+    "allowSyntheticDefaultImports": true,                // Allow default imports from modules with no default export
+    "noImplicitAny": true,                               // Avoid using 'any' type implicitly
+    "resolveJsonModule": true,                           // Allows importing JSON modules
+    "noEmit": false,                                     // Enable emitting of compiled JavaScript files
+    "noUnusedLocals": true,                              // Warn on unused local variables
+    "noUnusedParameters": true,                          // Warn on unused parameters in functions
+    "strictNullChecks": true,                            // Ensure values can't be null or undefined unless explicitly allowed
+    "strictFunctionTypes": true,                         // Ensure function arguments and return types are strictly typed
+    "noFallthroughCasesInSwitch": true,                  // Prevent fallthrough in switch statements
+    "noImplicitReturns": true                            // Warn if code paths do not explicitly return a value
+  },
+  "include": ["src/**/*"],                               // Include all TypeScript files in the 'src' directory
+  "exclude": ["node_modules", "dist"]                    // Exclude these directories from compilation
+}
+
