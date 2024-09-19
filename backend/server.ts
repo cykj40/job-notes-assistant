@@ -30,7 +30,8 @@ Work Performed:
 Materials Used:
 - Extract and list any materials or equipment mentioned in the raw notes.
 
-Raw Notes: ${rawNote}`
+Raw Notes: ${rawNote}
+`;
 
     try {
         const response = await cohere.generate({
