@@ -17,8 +17,6 @@ app.post('/generate-notes', async (req: Request, res: Response) => {
     const { rawNotes } = req.body;
 
     const prompt = `
-Generate detailed technical job notes based on the following raw notes. Do not mention anyone by name. If someone from our company is mentioned, refer to them as "L & D Construction Group." The notes should be written in a clear, professional format from the first-person perspective of "L & D Construction Group." The structure should include:
-
 Invoice Notes:
 
 Work Performed:
