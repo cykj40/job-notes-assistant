@@ -16,7 +16,7 @@ const cohere = new CohereClient({
 app.post('/generate-notes', async (req: Request, res: Response) => {
     const { rawNotes } = req.body;
 
-const prompt = `
+    const prompt = `
 Generate detailed technical job notes based on the following raw notes. If their is not enough data to complete any of the steps in work performed exclude the step in your response.  Do not mention anyone by name. If someone from our company is mentioned, refer to them as "L & D Construction Group". The bottom of the sheet should include this statement automatically "If you require any further clarification or additional details on specific steps taken, L & D Construction Group is happy to provide more information". The notes should be written in a clear, professional format from the first-person perspective of "L & D Construction Group." The structure should include:
 
 Invoice Notes:
@@ -30,7 +30,7 @@ Work Performed:
 Materials Used:
 - Extract and list any materials or equipment mentioned in the raw notes.
 
-Raw Notes: ${rawNote}
+Raw Notes: ${rawNotes}
 `;
 
     try {
