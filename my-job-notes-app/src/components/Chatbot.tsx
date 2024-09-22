@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Chatbot.css';
+
 
 interface Message {
     sender: 'user' | 'bot';
@@ -15,7 +15,7 @@ const Chatbot: React.FC = () => {
 
         if (!input.trim()) return;
 
-        const userMessage = { sender: 'user', text: input };
+        const userMessage: Message = { sender: 'user', text: input };
         setMessages((prev) => [...prev, userMessage]);
         setInput('');
 
